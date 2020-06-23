@@ -78,6 +78,7 @@ export default {
         selectIetm(item, index) {
             let songs = this.songs
             var songurl = ''
+            let url = ''
             getNewMusicUrl(item.musicData.songmid).then(res => {
                 if (res.code === 0) {
                     if(!res.req_0.data.midurlinfo[0].purl) {

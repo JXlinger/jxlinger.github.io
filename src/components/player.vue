@@ -52,7 +52,7 @@
                 </div>
             </div>
         </transition>
-        <audio ref="audio" :src="currentSong.songurl"></audio>
+        <audio ref="audio" loop :src="currentSong.songurl"></audio>
     </div>
 </template>
 

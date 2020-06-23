@@ -63,7 +63,6 @@ export default {
 <style scoped lang="stylus">
 .singer-enter-active
     transition all 0.3s cubic-bezier(0, 0.67, 0.74, 1.18)
-
 .singer-enter
     transform translate3d(0, -200px, 0)
     opacity 0

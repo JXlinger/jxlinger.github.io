@@ -1,5 +1,5 @@
 <template>
-    <div id="app" @touchmove.prevent>
+    <div id="app">
         <div v-if="$route.meta.show" class="pull"></div>
         <Header v-if="$route.meta.show" />
         <keep-alive>

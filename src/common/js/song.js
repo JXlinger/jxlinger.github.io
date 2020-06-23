@@ -21,7 +21,7 @@ export function createSong(musicData) {
         album: musicData.album,
         duration: musicData.duration,
         image: `https://y.gtimg.cn/music/photo_new/T002R300x300M000${musicData.albummid}.jpg?max_age=2592000`,
-        url: ''// getUrl(musicData.songmid)
+        url: ''//getUrl(musicData.songmid)
     })
 }
 
@@ -40,7 +40,8 @@ function getUrl(id) {
         if(res.code === 0) {
             url = res.req_0.data.sip[1] + res.req_0.data.midurlinfo[0].purl
         }
-        // return url
         console.log(url);
+        return url
+        
     })
 }
